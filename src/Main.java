@@ -23,6 +23,9 @@ public class Main {
                         listita.insertar(elemento);
                         break;
                     case 2:
+                        if (listita.estaVacia()){
+
+
                         elemento = Integer.parseInt(JOptionPane.showInputDialog(null,
                               "Ingrese al elemento del nodo a Eliminar", "Eliminando Nodo de la Lista Circular",
                             JOptionPane.INFORMATION_MESSAGE));
@@ -33,6 +36,11 @@ public class Main {
                         }else{
                             JOptionPane.showMessageDialog(null, "El Elemento "+elemento+" No esta en la Lista",
                                     "Elemento no encontrado", JOptionPane.INFORMATION_MESSAGE);
+                        }
+                        } else{
+                            JOptionPane.showMessageDialog(null, "Aun no hay nodos",
+                                    "lista Vacia", JOptionPane.INFORMATION_MESSAGE);
+
                         }
                         break;
                     case 3:

@@ -27,9 +27,10 @@ public class ListaLC {
         NodoLC auxiliar = ultimo.siguiente;
         String cadena=" ";
         do{
-cadena=cadena + "["+auxiliar.dato+"]->";
+
+cadena=cadena + "[" + auxiliar.dato + "]->";
 auxiliar=auxiliar.siguiente;
-        }while(auxiliar!=ultimo.siguiente);
+        }while(auxiliar!= ultimo.siguiente);
         JOptionPane.showMessageDialog(null, cadena,
                 "Mostrando La Lista Circular", JOptionPane.INFORMATION_MESSAGE);
 
